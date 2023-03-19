@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Formulario de Inicio de Sesión</title>
+	<!-- Agregamos los estilos de Bootstrap 4 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+JYYu6veNFpXTaPku6UrgvxyDJoEA" crossorigin="anonymous">
+    <style>
+    /* Estilos para el formulario */
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* Estilos para los campos de entrada de texto */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón de inicio de sesión */
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilos para el botón de cancelar */
+button[type=button] {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilos para los mensajes de error */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilos para el título del formulario */
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+h4 {
+    font-size: 36px; /* Tamaño de fuente grande */
+    text-align: center; /* Alineación centrada */
+    margin-top: 50px; /* Margen superior grande */
+    margin-bottom: 30px; /* Margen inferior más pequeño */
+      }
+      .forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h4>Iniciar Sesión</h4>
+					</div>
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<label for="usuario">Usuario:</label>
+								<input type="text" id="usuario" name="usuario" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="contraseña">Contraseña:</label>
+								<input type="password" id="contraseña" name="contraseña" class="form-control">
+							</div>
+							<button type="submit" class="btn btn-primary" align="">Iniciar Sesión</button>
+              <div class="forgot-password">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+              </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmIwAWwDcqbJgO6Pm9/f"
+   crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+JYYu6veNFpXTaPku6UrgvxyDJoEA"
+   crossorigin="anonymous"></script>
+</body>
+</html>
